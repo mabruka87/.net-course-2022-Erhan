@@ -9,15 +9,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{BCDD88E8-992E-4798-A26E-12FB1F55E5A5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{B28CC26F-D6A6-419C-B8AC-5B208AE36663}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeWithTypes", "PracticeWithTypes\PracticeWithTypes.csproj", "{5A146E19-6D38-4354-B212-0C03C04306A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankService", "BankService\BankService.csproj", "{427EFAE3-A69E-4129-A036-3F87B0E7693C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B28CC26F-D6A6-419C-B8AC-5B208AE36663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28CC26F-D6A6-419C-B8AC-5B208AE36663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28CC26F-D6A6-419C-B8AC-5B208AE36663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28CC26F-D6A6-419C-B8AC-5B208AE36663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A146E19-6D38-4354-B212-0C03C04306A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A146E19-6D38-4354-B212-0C03C04306A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A146E19-6D38-4354-B212-0C03C04306A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A146E19-6D38-4354-B212-0C03C04306A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427EFAE3-A69E-4129-A036-3F87B0E7693C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427EFAE3-A69E-4129-A036-3F87B0E7693C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427EFAE3-A69E-4129-A036-3F87B0E7693C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427EFAE3-A69E-4129-A036-3F87B0E7693C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B28CC26F-D6A6-419C-B8AC-5B208AE36663} = {2DAB60D7-5A6B-4CEC-A89D-2D0EA563B334}
+		{5A146E19-6D38-4354-B212-0C03C04306A0} = {BCDD88E8-992E-4798-A26E-12FB1F55E5A5}
+		{427EFAE3-A69E-4129-A036-3F87B0E7693C} = {2DAB60D7-5A6B-4CEC-A89D-2D0EA563B334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0097849E-39FC-49C1-B05C-98D472240A58}
