@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Client:Employee
+    public class Client: Person 
     {
-        public string? status { get; set; }
+        public string? Bank { get; set; } 
     }
 }

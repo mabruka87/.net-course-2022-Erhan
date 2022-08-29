@@ -8,7 +8,7 @@ namespace Models
 {
     public class Employee : Person
     {
-        public string? contract { get; set; }
+        public string? Contract { get; set; }
 
         
     }

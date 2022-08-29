@@ -6,43 +6,35 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Employee employee = new Employee();
-        employee.Name = "Tom";
-        employee.Age = 25;
-        employee.contract = "контракт 1";
-        Console.WriteLine(employee.contract);
-        AddContract(employee);
-        Console.WriteLine(employee.contract);
+        Employee employee = new Employee { Name = "Tom", Age = 25, Contract = "Контракт 1" };
+        ChangeContract(ref employee);
+        Console.WriteLine(employee.Contract);
 
-        
         Currency currency = new Currency();
-        ChangeCurrency(currency);
+        currency.CurrencyName = "Valuta";
+        currency.CurrencyPrice = 10.5;
+        Console.WriteLine($"Валюта {currency.CurrencyName} курс {currency.CurrencyPrice}");
+        ChangeCurrency( ref currency);
+        Console.WriteLine($"Валюта {currency.CurrencyName} курс {currency.CurrencyPrice}");
+
         
         Bank bank = new Bank();
-        int result = bank.CalcSalary(100, 20, 2, "владелец");
+        float result = bank.CalcSalary(100.20F, 20.30f, 2);
         Console.WriteLine(result);
+
         Client client = new Client();
-        bank.ConvertClitnToEmployee(client); 
-        
-
+        //bank.ConvertClitnToEmployee(client); 
 
     }
-    static void AddContract(Employee employee)
+    static void ChangeContract(ref Employee employee)
     {
-        employee.contract = "контракт 2";
-
-        Console.WriteLine($"{employee.Name} {employee.Age} {employee.contract}");
-
-        employee = new Employee { Name="Bob" ,Age = 25, contract="контракт 3"};
-  
-        Console.WriteLine($"{employee.Name} {employee.Age} {employee.contract}");
-        
+        employee.Contract = "контракт 2";
     }
 
-    static void ChangeCurrency(Currency currency)
+    static void ChangeCurrency( ref Currency currency)
     {
         currency.CurrencyName = "Rub";
         currency.CurrencyPrice = 0.22;
-        Console.WriteLine($"Валюта {currency.CurrencyName} курс {currency.CurrencyPrice}");
+        Console.WriteLine($"Валюта метод {currency.CurrencyName} курс {currency.CurrencyPrice}");
     }
 }
