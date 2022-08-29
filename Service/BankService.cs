@@ -3,9 +3,9 @@ namespace Service
 {
     public class BankService
     {
-        public float CalcSalary(float income, float expen, int count, string post)
+        public int CalcSalary(float income, float expen, int count)
         {
-             float salary = Convert.ToInt32((income - expen) / count);
+             int salary = Convert.ToInt32((income - expen) / count);
              return salary;
         }
 

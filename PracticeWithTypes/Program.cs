@@ -1,6 +1,5 @@
-﻿using BankService;
-using Models;
-using System.Diagnostics.Metrics;
+﻿using Models;
+using Service;
 
 internal class Program
 {
@@ -17,13 +16,15 @@ internal class Program
         ChangeCurrency( ref currency);
         Console.WriteLine($"Валюта {currency.CurrencyName} курс {currency.CurrencyPrice}");
 
-        
-        Bank bank = new Bank();
+
+        BankService bank = new BankService();
         float result = bank.CalcSalary(100.20F, 20.30f, 2);
         Console.WriteLine(result);
 
         Client client = new Client();
         //bank.ConvertClitnToEmployee(client); 
+
+        //var clientList = GetCLientList();
 
     }
     static void ChangeContract(ref Employee employee)
