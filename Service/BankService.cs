@@ -1,18 +1,22 @@
 ﻿
+using Models;
+
 namespace Service
 {
     public class BankService
     {
-        public float CalcSalary(float income, float expen, int count, string post)
+        public int CalcSalary(float income, float expen, int count)
         {
-             float salary = Convert.ToInt32((income - expen) / count);
-             return salary;
+            int salary = Convert.ToInt32((income - expen) / count);
+            return salary;
         }
 
-      /*  public void ConvertClitnToEmployee(Client client)
+        public Employee ConvertClitnToEmployee(Client client)
         {
-            Employee employee = client;
-            Client client1 = (Client)employee;
-        }*/
+            return new Employee
+            {
+                Name = client.Name
+            };
+        }
     }
 }
