@@ -8,8 +8,8 @@ namespace Models
 {
     public class Employee : Person
     {
-        public string? Contract { get; set; }
+        public string Contract { get; set; }
+        public int Salary;
 
-        
     }
 }
